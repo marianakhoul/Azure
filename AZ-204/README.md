@@ -55,8 +55,7 @@ connections, encryption, and expiration
 * configure an app or service to use Application Insights
 * analyze and troubleshoot solutions by using Azure Monitor
 * implement Application Insights web tests and alerts
-## Connect to and consume Azure services and third-party services (15-
-20%)
+## Connect to and consume Azure services and third-party services (15-20%)
 ### Implement API Management
 * create an APIM instance
 * configure authentication for APIs
