@@ -45,5 +45,57 @@ Delete a VM
 az vm delete --resource-group myResourceGroup --name MyVM1
 ```
 
+List VMs
+```
+az vm list
+```
+
+Get information about a VM
+```
+az vm show --resource-group myResourceGroup --name MyVM1
+```
+
+Get usage of VM resources
+```
+az vm list-usage --location eastus
+```
+
+Get all available VM sizes
+```
+az vm list-sizes --location eastus
+```
+
+Add a data disk to a VM
+```
+az vm disk attach --resource-group myResourceGroup --vm-name MyVM1 --disk myDataDisk --size-gb 128 --new
+```
+
+Remove a data disk from a VM
+```
+az vm disk detach --resource-group myResourceGroup --vm-name MyVM1 --disk myDataDisk
+```
+
+Resize a disk
+```
+az disk update --resource-group myResourceGroup --name myDataDisk --size-gb 256
+```
+
+Snapshot a disk
+```
+az snapshot create --resource-group myResourceGroup --name mySnapshot  --source myDataDisk
+```
+
+create image of a VM
+```
+az image create --resource-group myResourceGroup --source myVM --name myImage
+```
+
+create VM from image
+```
+az vm create --resource-group myResourceGroup --name myVM --image myImage
+```
+
+
+
 #### References
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage
