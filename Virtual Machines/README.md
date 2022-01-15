@@ -18,6 +18,17 @@ New-AzVm -ResourceGroupName NameofResourceGroup -Name aznewVM -Location EastUS -
 9. Verify you want it to stop
 
 
+### CLI commands
 
+#### Steps
+1. az login
+2. az group list to list all the resource groups, results come back in json format
+3. az group create --name myResourceGroup --location eastus (creates resource group)
+4. az vm create \
+    --resource-group myResourceGroup \
+    --name myVM \
+    --image Win2019Datacenter \
+    --public-ip-sku Standard \
+    --admin-username azureuser
 
 
