@@ -1,4 +1,4 @@
-## PowerShell Commands and Script Syntax
+## PowerShell Script Syntax
 
 PowerShell has many similarities with other programming languages. We can define variables, use loops, write functions, etc.
 Variables are declared using $ and assigned a value using =.
@@ -40,5 +40,9 @@ But then when you capture variables, it depends on order.
 param([int]$size, [string]$location)
 ```
 
+## Common PowerShell Commands
+
+
 #### References
 https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powershell/
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-ref
