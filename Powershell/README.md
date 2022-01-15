@@ -40,3 +40,5 @@ But then when you capture variables, it depends on order.
 param([int]$size, [string]$location)
 ```
 
+#### References
+https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powershell/
