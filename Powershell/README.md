@@ -42,6 +42,27 @@ param([int]$size, [string]$location)
 
 ## Common PowerShell Commands
 
+Create a simple VM
+```
+New-AzVM -Name $myVM
+```
+
+Create a VM from a custom image
+```
+New-AzVm -ResourceGroupName $myResourceGroup -Name $myVM ImageName "myImage" -Location $location
+```
+
+Create a VM configuration
+```
+$vm = New-AzVMConfig -VMName $myVM -VMSize "Standard_D1_v1"
+```
+
+Add configuration settings
+```
+$vm = Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $myVM -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+```
+
+
 
 #### References
 https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powershell/
