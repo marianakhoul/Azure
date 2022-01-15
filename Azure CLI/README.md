@@ -45,3 +45,5 @@ Delete a VM
 az vm delete --resource-group myResourceGroup --name MyVM1
 ```
 
+#### References
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage
