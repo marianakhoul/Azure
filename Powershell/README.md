@@ -47,6 +47,17 @@ Create a simple VM
 New-AzVM -Name $myVM
 ```
 
+Create a VM
+```
+New-AzVM -ResourceGroupName $myResourceGroup -Location $location -VM $vm
+```
+
+Update a VM
+```
+Update-AzVM -ResourceGroupName $myResourceGroup -VM $vm
+
+```
+
 Create a VM from a custom image
 ```
 New-AzVm -ResourceGroupName $myResourceGroup -Name $myVM ImageName "myImage" -Location $location
@@ -62,7 +73,50 @@ Add configuration settings
 $vm = Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $myVM -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 ```
 
+Add a network interface
+```
+$vm = Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+```
 
+Specify a platform image
+```
+$vm = Set-AzVMSourceImage -VM $vm -PublisherName "publisher_name" -Offer "publisher_offer" -Skus "product_sku" -Version "latest"
+```
+
+List VMs in a subscription
+```
+Get-AzVM
+```
+
+List VMs in a resource group
+```
+Get-AzVM -ResourceGroupName $myResourceGroup
+```
+
+Get information about a VM
+```
+Get-AzVM -ResourceGroupName $myResourceGroup -Name $myVM
+```
+
+Start a VM
+```
+Start-AzVM -ResourceGroupName $myResourceGroup -Name $myVM
+```
+
+Stop a VM
+```
+Stop-AzVM -ResourceGroupName $myResourceGroup -Name $myVM
+```
+
+Restart a VM
+```
+Restart-AzVM -ResourceGroupName $myResourceGroup -Name $myVM
+```
+
+Delete a VM
+```
+Remove-AzVM -ResourceGroupName $myResourceGroup -Name $myVM
+```
 
 #### References
 https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powershell/
