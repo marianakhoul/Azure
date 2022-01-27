@@ -17,5 +17,7 @@ Pull the image from ACR
 ```
 docker pull myregistry.azurecr.io/samtools/samtools:1.0.0
 ```
-
-
+Remove image from ACR
+```
+docker rmi myregistry.azurecr.io/samtools/samtools:1.0.0
+```
