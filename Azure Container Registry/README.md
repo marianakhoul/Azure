@@ -2,7 +2,7 @@
 
 Log in to a registry
 ```
-docker login myregistry.azurecr.io --username XXX --password-stdin XXXX
+docker login myregistry.azurecr.io --username XXX --password-stdin #enter password in terminal
 ```
 If you pulled a public image, run it locally.
 You also want to create an alias of your image to be able to push it to ACR.
