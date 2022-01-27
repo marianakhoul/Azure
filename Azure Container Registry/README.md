@@ -7,7 +7,7 @@ docker login myregistry.azurecr.io --username XXX --password XXXX
 If you pulled a public image, run it locally.
 You also want to create an alias of your image to be able to push it to ACR.
 ```
-docker tag 37867935fcf9 myregistry.azurecr.io/samtools/samtools:1.0.0
+docker tag XXXX myregistry.azurecr.io/samtools/samtools:1.0.0
 ```
 Push the image to ACR
 ```
