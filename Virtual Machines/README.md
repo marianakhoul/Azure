@@ -1,5 +1,10 @@
 ## Virtual Machines 
 
+A linux or windows server that you can deploy and use.
+Public IP are protected. You need to edit for people to be able to connect to it.
+VM is a compute option.
+Prices differ based on regions, ram, cpu, storage etc.
+
 ### Powershell commands
 
 #### Steps
