@@ -70,9 +70,7 @@ To delete everything associates with the VM **(if the resource group is only for
 In the portal, in the Review + Create tab, there is the option to download the ARM Template.
 Template contains the resources. Is in .json format. **For the exam, need to be able to read through the template and know what it's doing.** Need to understand that the json template contains 5 sections. Schema is static. ContentVersion is for you to manage if want too put in code repo. Parameters is for the Parameters file. Resources is where resources are getting created. Need to be able to read through resource and know what is happening. **Exam questions: something is missing from the template and you would need to choose from the MCQ options**. Conforms with the desired state configurations which means that resources are created following the template (as they should be). If you want to create multiple VMs. In parameters, need to give each VM own IP, own name, etc. Can add template to a library. Once you've saved it in the library, can come back to it whenever and redeploy multiple times. If you search for Templates in the Azure search in the protal, it will show you all the ARM templates you have saved. It didn't store the parameters file. Need to upload it since previously downloaded it instead of filling in all the blank. Using the ARMDeploy scripts, it can deploy the parameters and json files.
 
-### Powershell commands
-
-#### Steps
+#### Create VM using Powershell
 1. Open Powershell
 2. Connect your Azure account to Powershell
 Connect-AzAccount
@@ -87,10 +85,9 @@ New-AzVm -ResourceGroupName NameofResourceGroup -Name aznewVM -Location EastUS -
 8. To stop VM, use Stop-AzVm -Name "aznewVm" -ResourceGroupName "NameofResourceGroup"
 9. Verify you want it to stop
 
+**Exam Question: will show you the command and you need to see what is missing from the essential/requirements to have a correct command**
 
-### CLI commands
-
-#### Steps
+#### Create VM using Azure CLI
 1. az login
 2. az group list to list all the resource groups, results come back in json format
 3. az group create --name myResourceGroup --location eastus (creates resource group)
@@ -100,5 +97,4 @@ New-AzVm -ResourceGroupName NameofResourceGroup -Name aznewVM -Location EastUS -
     --image Win2019Datacenter \
     --public-ip-sku Standard \
     --admin-username azureuser
-
 
