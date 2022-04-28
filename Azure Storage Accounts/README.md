@@ -2,10 +2,12 @@
 
 ### Part of Exam Covered
 #### Develop for Azure storage (15-20%)
-Overview of unmanaged storage accounts.
+1. Move items in Blob storage between storage accounts or containers
+2. 
+
 
 ### Overview/Notes
-
+Overview of unmanaged storage accounts.
 Managed storage accounts are associated with Virtual Machines and the attached data disks attached to the VMs.
 Unamanged storage account is kind of different.
 Empty storage acounts cost nothing. Could cost 2 cents per Gb per month.
