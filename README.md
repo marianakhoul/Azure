@@ -44,7 +44,7 @@ operational or system metrics
 * authenticate and authorize users and apps by using Azure Active Directory
 * create and implement shared access signatures
 * implement solutions with Microsoft Graph
-## Implement secure cloud solutions
+### Implement secure cloud solutions
 * secure app configuration data by using App Configuration or Azure Key Vault
 * develop code that uses keys, secrets, and certificates stored in Azure Key Vault
 * implement Managed Identities for Azure resources
