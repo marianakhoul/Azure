@@ -2,7 +2,7 @@
 
 ### Part of Exam Covered
 #### Develop Azure compute solutions (25-30%)
-Implement IaaS solutions
+**Implement IaaS solutions**
 1. Provision virtual machines (VMs)
 2. Configure, validate, and deploy ARM templates
 
