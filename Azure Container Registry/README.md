@@ -1,4 +1,4 @@
-## Commands for Azure Container Registry (ACR)
+# Commands for Azure Container Registry (ACR)
 
 Log in to a registry
 ```
