@@ -33,4 +33,5 @@ By default, the Blob is in the hot access tier. This is only available for gener
 If you have a file which you don't access much, can put it in a cool tier. Blob properties, scroll down, see access tier. This will have affects on the cost. Cool access tier means we are committing to 30 days of having the file in Azure (can't be removed before). Will save money on storage and the access becomes more expensive. We do this to files that we don't access much, maybe in the case of an emergency. Third tier is Archive. Archive becomes even cheaper but making file more inaccessible and there is a delay in accessing. Would need to push a request and Azure will let you know when it is ready. Stored for at least 180 days. Delay could be up to a few hours. Save backups and infrequently accessed files in terms of storage.
 
 
-
+Go through this Git Repo:
+https://github.com/Azure-Samples/storage-blob-dotnet-getting-started
