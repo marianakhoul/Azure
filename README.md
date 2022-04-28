@@ -26,7 +26,6 @@ operational or system metrics
 * implement input and output bindings for a function
 * implement function triggers by using data operations, timers, and webhooks
 * implement Azure Durable Functions
-* implement custom handlers
 ## Develop for Azure storage (15-20%)
 ### Develop solutions that use Cosmos DB storage
 * select the appropriate API and SDK for a solution
@@ -38,7 +37,7 @@ operational or system metrics
 * move items in Blob storage between storage accounts or containers
 * set and retrieve properties and metadata
 * perform operations on data by using the appropriate SDK
-* implement storage policies, and data archiving and retention
+* implement storage policies, data archiving, and retention
 ## Implement Azure security (20-25%)
 ### Implement user authentication and authorization
 * authenticate and authorize users by using the Microsoft Identity platform
