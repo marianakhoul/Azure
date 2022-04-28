@@ -51,6 +51,9 @@ Always have access requirements.
 Private access need authentication to access. Can't access the content for the file using the URL only unless you specify this for some reason.
 
 ### Access Keys and Shares Access Signatures
-Access keys is the primary way of accessing storage accounts. Can find under Settings. Do not want you access key to be out in the public. Can use the conenction string to connect to the storage account programmatically. Key 1 is to be used and Key 2 is for backup. Accidentally upload Key 1 to GitHub, can use Key 2 for the application instead and then regenerate Key 1. To give people access to the account is by giving people a Shared Access Signature (SAS). With this, we aare sigining using Keys and being specific with the permission people are getting. Can also put expiration and start dates. Generate the SAS key will give you a connection string or SAS token to be appended to the URL to see content.
+Access keys is the primary way of accessing storage accounts. Can find under Settings. Do not want you access key to be out in the public. Can use the conenction string to connect to the storage account programmatically. Key 1 is to be used and Key 2 is for backup. Accidentally upload Key 1 to GitHub, can use Key 2 for the application instead and then regenerate Key 1.
 
+To give people access to the account is by giving people a Shared Access Signature (SAS). With this, we aare sigining using Keys and being specific with the permission people are getting. Can also put expiration and start dates. Generate the SAS key will give you a connection string or SAS token to be appended to the URL to see content.
+
+To revoke peoples permissions, not grant them access anymore, invalidate the key used to generate the token. Would need to regenerate the key to have 2 keys again.
 
