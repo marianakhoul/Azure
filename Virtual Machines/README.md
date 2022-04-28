@@ -66,6 +66,10 @@ Costs if not shutdown
 3. IP Address has a cost
 To delete everything associates with the VM **(if the resource group is only for this VM!!)**, delete the whole resource group.
 
+#### ARM Templates
+In the portal, in the Review + Create tab, there is the option to download the ARM Template.
+Template contains the resources. Is in .json format. **For the exam, need to be able to read through the template and know what it's doing.** Need to understand that the json template contains 5 sections. Schema is static. ContentVersion is for you to manage if want too put in code repo. Parameters is for the Parameters file. Resources is where resources are getting created. Need to be able to read through resource and know what is happening. **Exam questions: something is missing from the template and you would need to choose from the MCQ options**. Conforms with the desired state configurations which means that resources are created following the template (as they should be). If you want to create multiple VMs. In parameters, need to give each VM own IP, own name, etc. Can add template to a library. Once you've saved it in the library, can come back to it whenever and redeploy multiple times. If you search for Templates in the Azure search in the protal, it will show you all the ARM templates you have saved.
+
 ### Powershell commands
 
 #### Steps
