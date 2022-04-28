@@ -3,8 +3,9 @@
 ### Part of Exam Covered
 #### Develop for Azure storage (15-20%)
 1. Move items in Blob storage between storage accounts or containers
-2. 
-
+2. Set and retrieve properties and metadata
+3. Perform operations on data by using the appropriate SDK
+4. Implement storage policies, data archiving, and retention
 
 ### Overview/Notes
 Overview of unmanaged storage accounts.
