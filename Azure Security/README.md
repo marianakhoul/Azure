@@ -13,3 +13,6 @@
 3. Implement Managed Identities for Azure resources
 
 ### Overview/Notes
+Central service that deals with Identiy is the Azure Active Directory. There is a free option. This is different than the Windows Active Directory. Azure AD Connect can sync an on-premise directory can be pushed and syncronized in the cloud. It is managed by the on-premise directory. Can use their coorporate ID and password to authenticate. Can allow for social media connecting (login with Facebook for example).
+
+
